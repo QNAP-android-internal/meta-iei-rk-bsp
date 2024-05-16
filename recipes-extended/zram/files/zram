@@ -1,0 +1,4 @@
+# use 25% of memory
+ZRAM_SIZE_PERCENT=25
+# use zstd algorithm
+ZRAM_ALGORITHM=zstd
