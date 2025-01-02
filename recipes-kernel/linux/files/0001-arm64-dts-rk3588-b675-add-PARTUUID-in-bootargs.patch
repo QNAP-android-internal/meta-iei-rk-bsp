@@ -1,0 +1,29 @@
+From 0581c49c39a1361f613dd2066ad8b0e80ca83eda Mon Sep 17 00:00:00 2001
+From: lcwang <lcwang@ieiworld.com>
+Date: Fri, 27 Dec 2024 13:33:24 +0800
+Subject: [PATCH 1/1] arm64: dts: rk3588-b675: add PARTUUID in bootargs
+
+Avoid Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0)
+
+The Rockchip BSP SDK is using UUID to specify rootdev
+in parameter.txt and kernel's dts
+---
+ arch/arm64/boot/dts/rockchip/rk3588-b675.dts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm64/boot/dts/rockchip/rk3588-b675.dts b/arch/arm64/boot/dts/rockchip/rk3588-b675.dts
+index 87fef2555413..fbf6f6527a73 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3588-b675.dts
++++ b/arch/arm64/boot/dts/rockchip/rk3588-b675.dts
+@@ -19,7 +19,7 @@ / {
+ 	compatible = "iei,rk3588-b675", "rockchip,rk3588";
+ 
+ 	chosen: chosen {
+-		bootargs = "earlycon=uart8250,mmio32,0xfeb50000 console=ttyFIQ0 irqchip.gicv3_pseudo_nmi=0 rcupdate.rcu_expedited=1 rcu_nocbs=all quiet";
++		bootargs = "earlycon=uart8250,mmio32,0xfeb50000 console=ttyFIQ0 irqchip.gicv3_pseudo_nmi=0 rcupdate.rcu_expedited=1 rcu_nocbs=all quiet root=PARTUUID=614e0000-0000 rw rootwait";
+ 	};
+ 
+ 	/* If hdmirx node is disabled, delete the reserved-memory node here. */
+-- 
+2.34.1
+
