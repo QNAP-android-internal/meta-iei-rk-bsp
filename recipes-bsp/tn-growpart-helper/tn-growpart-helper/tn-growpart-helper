@@ -62,7 +62,7 @@ echo -e '\033[36m\n***********************************'
 echo 'Resizing storage at first boot.....'
 echo -e '***********************************\033[0m'
 
-growpart "${MMC_DEV}" "${PART_ENTRY_NUMBER}"
+growpart "${MMC_DEV}" "${PART_ENTRY_NUMBER}" | grep "CHANGE"
 if [ $? -eq 0 ]; then
   resize2fs "${ROOT_DEVICE}"
   mount -o remount,ro /
