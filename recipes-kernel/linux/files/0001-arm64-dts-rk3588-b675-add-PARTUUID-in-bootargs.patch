@@ -1,5 +1,5 @@
 From 0581c49c39a1361f613dd2066ad8b0e80ca83eda Mon Sep 17 00:00:00 2001
-From: lcwang <lcwang@ieiworld.com>
+From: lcwang <zaq14760@gmail.com>
 Date: Fri, 27 Dec 2024 13:33:24 +0800
 Subject: [PATCH 1/1] arm64: dts: rk3588-b675: add PARTUUID in bootargs
 
