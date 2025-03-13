@@ -691,7 +691,7 @@ state.rockchipes8388 {
 	control.37 {
 		iface CARD
 		name 'Headphone Jack'
-		value false
+		value true
 		comment {
 			access read
 			type BOOLEAN
@@ -701,7 +701,7 @@ state.rockchipes8388 {
 	control.38 {
 		iface CARD
 		name 'Headset Mic Jack'
-		value false
+		value true
 		comment {
 			access read
 			type BOOLEAN
@@ -731,7 +731,7 @@ state.rockchipes8388 {
 	control.41 {
 		iface MIXER
 		name 'Headphone Switch'
-		value false
+		value true
 		comment {
 			access 'read write'
 			type BOOLEAN
