@@ -1,0 +1,11 @@
+[Unit]
+Description=Bluetooth Init Service
+After=connman.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bt-init.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
