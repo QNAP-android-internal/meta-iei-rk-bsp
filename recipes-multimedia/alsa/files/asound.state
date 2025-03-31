@@ -545,7 +545,7 @@ state.rockchipes8388 {
 	control.27 {
 		iface MIXER
 		name 'Left Channel Capture Volume'
-		value 0
+		value 8
 		comment {
 			access 'read write'
 			type INTEGER
@@ -553,13 +553,13 @@ state.rockchipes8388 {
 			range '0 - 8'
 			dbmin 0
 			dbmax 2400
-			dbvalue.0 0
+			dbvalue.0 2400
 		}
 	}
 	control.28 {
 		iface MIXER
 		name 'Right Channel Capture Volume'
-		value 0
+		value 8
 		comment {
 			access 'read write'
 			type INTEGER
@@ -567,7 +567,7 @@ state.rockchipes8388 {
 			range '0 - 8'
 			dbmin 0
 			dbmax 2400
-			dbvalue.0 0
+			dbvalue.0 2400
 		}
 	}
 	control.29 {
