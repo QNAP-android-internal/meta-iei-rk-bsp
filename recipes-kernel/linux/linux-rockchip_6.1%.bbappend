@@ -1,7 +1,7 @@
 # Copyright (C) 2021, Rockchip Electronics Co., Ltd
 # Released under the MIT license (see COPYING.MIT for the terms)
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
-SRCREV = "b627bac3a57be529d4f9f710da915011e8a62601"
+SRCREV = "d1ed625fa2c42506379d89fa72e328b4e042dae5"
 
 SRC_URI = " \
     git://github.com/QNAP-android-internal/kernel-rk.git;protocol=https;branch=iei-android-14.0.0_rkr5; \
