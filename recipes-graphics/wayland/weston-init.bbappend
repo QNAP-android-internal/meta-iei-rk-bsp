@@ -8,6 +8,7 @@ SRC_URI += "file://pavucontrol.png \
 "
 
 do_install:append() {
+    printf "\n[output]\nname=HDMI-A-2\nmode=800x600" >> ${D}${sysconfdir}/xdg/weston/weston.ini
     printf "\n[launcher]\nicon=/usr/share/icons/hicolor/32x32/apps/terminal.png\npath=/usr/bin/weston-terminal" >> ${D}${sysconfdir}/xdg/weston/weston.ini
     printf "\n[launcher]\nicon=/usr/share/icons/hicolor/32x32/apps/chromium.png\npath=/usr/bin/chromium --in-process-gpu" >> ${D}${sysconfdir}/xdg/weston/weston.ini
     printf "\n[launcher]\nicon=/usr/share/icons/hicolor/32x32/apps/pavucontrol.png\npath=/usr/bin/pavucontrol" >> ${D}${sysconfdir}/xdg/weston/weston.ini
