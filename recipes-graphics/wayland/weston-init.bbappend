@@ -4,6 +4,7 @@ PACKAGECONFIG += "no-idle-timeout"
 
 SRC_URI += "file://pavucontrol.png \
             file://terminal.png \
+            file://weston.env.append \
 "
 
 do_install:append() {
@@ -16,6 +17,7 @@ do_install:append() {
     install -m 0644 ${WORKDIR}/terminal.png ${D}/usr/share/icons/hicolor/32x32/apps/
     install -m 0644 ${WORKDIR}/pavucontrol.png ${D}/usr/share/icons/hicolor/32x32/apps/
     sed -i -r -e "s:ExecStart=(.*):ExecStart=\1 --shell=kiosk-shell.so:g" ${D}${systemd_system_unitdir}/weston.service
+    cat ${WORKDIR}/weston.env.append >> ${D}${sysconfdir}/default/weston
 }
 
 FILES:${PN} += " \
