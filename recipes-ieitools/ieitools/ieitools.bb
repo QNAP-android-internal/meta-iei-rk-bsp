@@ -9,7 +9,7 @@ inherit systemd
 
 SRCREV = "${AUTOREV}"
 SRC_URI += "\
-	git://10.20.70.37/sw3_yocto_rk356x_odm_group/odm/abm/iaso-rk3568/dqv/iei-dqv-tools.git;protocol=ssh;branch=PVT_tool_B675; \
+	git://10.20.70.37/sw3_yocto_rk356x_odm_group/odm/abm/iaso-rk3568/dqv/iei-dqv-tools.git;protocol=ssh;branch=b675_yocto_050_dqv; \
 "
 do_install:append () {
 	install -d ${D}/iei_dqv_tool
