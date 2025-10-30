@@ -71,7 +71,7 @@ ${bindir}/ \
 
 SYSTEMD_SERVICE:${PN} = "main_test.service"
 
-DQV_TOOLS = "dialog jq stress-ng usbutils memtester io mmc-utils evtest libinput i2c-tools tslib tslib-tests tslib-calibrate strace glmark2 iperf2 iperf3 fio fb-test coreutils systemd-analyze libcap chrony u-boot-tools u-boot-fw-utils cifs-utils tzdata"
+DQV_TOOLS = "dialog jq stress-ng usbutils memtester io mmc-utils evtest libinput i2c-tools tslib tslib-tests tslib-calibrate strace glmark2 iperf2 iperf3 fio fb-test coreutils systemd-analyze libcap chrony cifs-utils tzdata"
 RDEPENDS:${PN}:append = "${DQV_TOOLS} expect"
 RPROVIDES:${PN} += "libQt5Core.so.5()(64bit) \
 libQt5Core.so.5(Qt_5)(64bit) \
