@@ -44,6 +44,7 @@ do_install:append () {
 	install -m 0755  ${WORKDIR}/git/pcba_test/gpu_qc.sh ${D}/iei_dqv_tool/pcba_test/
         install -m 0755  ${WORKDIR}/git/pcba_test/hdmi_qc.sh ${D}/iei_dqv_tool/pcba_test/
 	install -m 0755  ${WORKDIR}/git/pcba_test/mem_qc.sh ${D}/iei_dqv_tool/pcba_test/
+        install -m 0755  ${WORKDIR}/git/pcba_test/m2_ssd_qc.sh ${D}/iei_dqv_tool/pcba_test/
 	install -m 0755  ${WORKDIR}/git/pcba_test/rgb_qc.sh ${D}/iei_dqv_tool/pcba_test/
 	install -m 0755  ${WORKDIR}/git/pcba_test/rtc_qc.sh ${D}/iei_dqv_tool/pcba_test/
 	install -d ${D}/iei_dqv_tool/reboot_test
