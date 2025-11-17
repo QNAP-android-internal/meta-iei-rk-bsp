@@ -38,6 +38,7 @@ do_install:append () {
 	install -m 0755  ${WORKDIR}/git/other_tools/showimage ${D}/${bindir}/
 	install -d ${D}/iei_dqv_tool/pcba_test
 	install -m 0755  ${WORKDIR}/git/pcba_test/backlight_qc.sh ${D}/iei_dqv_tool/pcba_test/
+	install -m 0755  ${WORKDIR}/git/pcba_test/backlight_lvds_qc.sh ${D}/iei_dqv_tool/pcba_test/
 	install -m 0755  ${WORKDIR}/git/pcba_test/bt_qc.sh ${D}/iei_dqv_tool/pcba_test/
 	install -m 0755  ${WORKDIR}/git/pcba_test/emmc_qc.sh ${D}/iei_dqv_tool/pcba_test/
 	install -m 0755  ${WORKDIR}/git/pcba_test/eth_qc.sh ${D}/iei_dqv_tool/pcba_test/
