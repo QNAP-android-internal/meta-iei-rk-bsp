@@ -17,9 +17,10 @@ do_install:append () {
         install -m 0755  ${WORKDIR}/git/exec.sh ${D}/iei_dqv_tool/
         install -m 0755  ${WORKDIR}/git/logging_utils.sh ${D}/iei_dqv_tool/
         install -m 0755  ${WORKDIR}/git/main.sh ${D}/iei_dqv_tool/
-	install -m 0755  ${WORKDIR}/git/test_png/SMPTE_Color_Bars_16x9.svg.png ${D}/iei_dqv_tool/
+	install -d ${D}/iei_dqv_tool/test_file
+	install -m 0755  ${WORKDIR}/git/test_file/SMPTE_Color_Bars_16x9.svg.png ${D}/iei_dqv_tool/test_file/
 	install -d ${D}/${ROOT_HOME}
-	install -m 0644  ${WORKDIR}/git/test_png/image.png ${D}/${ROOT_HOME}/
+	install -m 0644  ${WORKDIR}/git/test_file/image.png ${D}/${ROOT_HOME}/
 	install -d ${D}/iei_dqv_tool/burnin
 	install -m 0755  ${WORKDIR}/git/burnin/burnin_loop.sh ${D}/iei_dqv_tool/burnin/
 	install -m 0755  ${WORKDIR}/git/burnin/cpu_burnin.sh ${D}/iei_dqv_tool/burnin/
