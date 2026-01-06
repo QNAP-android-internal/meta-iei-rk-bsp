@@ -33,7 +33,6 @@ do_install:append () {
 	install -m 0755  ${WORKDIR}/git/configs/main_menu.json ${D}/iei_dqv_tool/configs/
 	install -d ${D}/iei_dqv_tool/other_tools
 	install -m 0755  ${WORKDIR}/git/other_tools/log.sh ${D}/iei_dqv_tool/other_tools/
-	install -m 0755  ${WORKDIR}/git/other_tools/wifi_expect.sh ${D}/iei_dqv_tool/other_tools/
 	install -d ${D}/${bindir}
 	install -m 0755  ${WORKDIR}/git/other_tools/fingerpaint ${D}/${bindir}/
 	install -m 0755  ${WORKDIR}/git/other_tools/showimage ${D}/${bindir}/
